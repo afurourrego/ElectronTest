@@ -10,7 +10,9 @@ let mainWindow;
 // Listen for app ready
 app.on('ready', function() {
   // create new window
-  mainWindow = new BrowserWindow({});
+  mainWindow = new BrowserWindow({
+    title: 'ElectronTest'
+  });
 
   // load html into window
   mainWindow.loadURL(`file://${__dirname}/mainWindow.html`);
