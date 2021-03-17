@@ -18,6 +18,11 @@ app.on('ready', function() {
   // load html into window
   mainWindow.loadURL(`file://${__dirname}/mainWindow.html`);
 
+  // quit app when closed
+  mainWindow.on('closed', function() {
+    app.quit();
+  });
+
   // build menu from template
   const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
   // insert menu
