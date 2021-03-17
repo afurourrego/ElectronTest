@@ -1,18 +1,18 @@
 {
   "name": "ElectronTest",
   "version": "1.0.0",
-  "description": "",
+  "description": "electron test app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/afurourrego/ElectronTest.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "afuro",
+  "license": "",
   "bugs": {
     "url": "https://github.com/afurourrego/ElectronTest/issues"
   },
