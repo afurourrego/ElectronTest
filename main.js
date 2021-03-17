@@ -58,14 +58,14 @@ const mainMenuTemplate = [
     submenu: [
       {
         label: 'Add item',
-        accelerator: process.platform == 'darwin' ? 'Command+N' : 'Ctrl+N',
+        accelerator:  'CmdOrCtrl+N',
         click() {
           createAddWindow();
         }
       },
       {
         label: 'Quit',
-        accelerator: process.platform == 'darwin' ? 'Command+Q' : 'Ctrl+Q',
+        accelerator: 'CmdOrCtrl+Q',
         click() {
           app.quit();
         }
