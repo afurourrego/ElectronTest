@@ -1,6 +1,7 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
+const { Menu } = require('electron');
 
 const { app, BrowserWindow } = electron;
 
@@ -13,4 +14,25 @@ app.on('ready', function() {
 
   // load html into window
   mainWindow.loadURL(`file://${__dirname}/mainWindow.html`);
+
+  // build menu from template
+  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+  // insert menu
+  Menu.setApplicationMenu(mainMenu);
 });
+
+// create menu template
+const mainMenuTemplate = [
+  {
+    label: 'File',
+    submenu: [
+      {
+        label: 'Quit',
+        accelerator: process.platform == 'darwin' ? 'Command+Q' : 'Ctrl+Q',
+        click() {
+          app.quit();
+        }
+      }
+    ]
+  }
+]
