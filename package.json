@@ -2,7 +2,7 @@
   "name": "ElectronTest",
   "version": "1.0.0",
   "description": "electron test app",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
