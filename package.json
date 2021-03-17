@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/afurourrego/ElectronTest/issues"
   },
-  "homepage": "https://github.com/afurourrego/ElectronTest#readme"
+  "homepage": "https://github.com/afurourrego/ElectronTest#readme",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  }
 }
